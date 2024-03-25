@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+html{
+	background: #fff;
+}
+
+	body{
+		position: relative;
+		background: linear-gradient(120deg,#f1dfc5,#86d3df);
+	}
+
+
+
+/* --------------------------- GENERALES -------------------------- */
+h1{
+    font-size: 28px;
+    
+}
+
+h2{
+    font-size: 23px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+button{
+    background-color: #cba7a7;
+    border-style: none;
+    border-radius: 15px;
+    color: #fff;
+    padding: 15px 23px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #ad3434;
+}
+
+/* --------------------------- CONTENTS SECCIONES -------------------------- */
+.contents{
+    width: 100%;
+    background: #fff;
+}
+
+    section:nth-child(2),section:nth-child(3){
+        margin: 10px auto;
+    }
+
+    .contents section:nth-child(2) h1{
+        text-align: right;
+    }
+
+    .contents section{
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+        .contents section h1{
+            padding: 0 10px;
+            color: #ff7d7d;
+        }
+
+        .div-flex{
+            display: flex;
+        }
+            
+            .parts{
+                padding: 10px;
+                width: 50%;
+            }
+
+                .content-img{
+                    overflow: hidden;
+                    padding: 40px;
+                    width: 100%;
+                    height: 300px;
+                    transition: 1s;
+                }
+
+                    .img{
+                        /* background-image: url(../assets/img/IA_EMOCION.png); */
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        transform: rotate(-10deg);
+                        border-radius: 10px;
+                        transition: 1s;
+                    }
+
+                    .content-img:hover .img{
+                        transform: rotate(0deg) translate(-30px, -30px);
+                        width: calc(100% + 60px);
+                        height: calc(100% + 60px);
+                        /* background-image: url(../assets/img/Camiseta1.PNG); */
+                    }
+
+            .parts p{
+                margin-top: 20px;
+            }
+
+/* ---------- CONTENTS - PRODUCTOS ---------- */
+#productos .div-grid{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    align-items: top;
+}
+
+    .content-img-pro{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+        .content-img-pro img{
+            width: 100%;
+            height: 300px;
+            transition: 1s;
+        }
+        
+        .content-img-pro img:hover{
+            transform: scale(1.2);
+        }
+
+    .grid-item h3,.grid-item p{
+        padding: 5px;
+        text-align: center;
+    }
+
+        .grid-item p{
+            font-size: 15px;
+            line-height: 15px;
+        }	
