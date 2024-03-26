@@ -1,0 +1,33 @@
+/* Estilos para la sección de servicios */
+
+.div-grid {
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Ajusta el espacio entre las columnas */
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .grid-item h3 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+  
